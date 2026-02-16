@@ -1,0 +1,8 @@
+.font {
+    opacity: 1;
+}
+
+body {
+    font-size: var(--font-size);
+    font-family: system-ui;
+}

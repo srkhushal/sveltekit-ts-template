@@ -1,0 +1,21 @@
+:root {
+    color-scheme: light dark;
+    --font-size: 1rem;
+    --offset: 1rem;
+    --text: light-dark(#000, #f0f0f0);
+    --background: light-dark(white, #080808);
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+}
+
+body {
+    color: var(--text);
+    background: var(--background);
+    transition: background 150ms;
+}

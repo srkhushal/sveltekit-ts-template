@@ -1,0 +1,55 @@
+@import url(./typography.css);
+@import url(./theme.css);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    position: relative;
+    touch-action: manipulation;
+    line-height: 1.6;
+    min-height: 100dvh;
+    -webkit-overflow-scrolling: touch;
+
+    margin-inline: auto;
+    max-width: 1500px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    scroll-behavior: smooth;
+}
+
+header,
+footer {
+    padding-block: var(--offset);
+}
+
+main {
+    flex: 1;
+    padding-inline: var(--offset);
+    width: 100%;
+    margin-inline: auto;
+}
+
+
+
+.no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
