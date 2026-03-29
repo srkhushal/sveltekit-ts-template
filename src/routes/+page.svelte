@@ -1,1 +1,5 @@
-<h1>App</h1>
+<script>
+	import SamplePage from './SamplePage.svelte';
+</script>
+
+<SamplePage />

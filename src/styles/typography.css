@@ -1,8 +1,19 @@
-.font {
-    opacity: 1;
-}
-
-body {
+body,
+input,
+textarea,
+div {
     font-size: var(--font-size);
     font-family: system-ui;
+}
+
+button {
+    font-family: system-ui;
+}
+
+input,
+textarea {
+    &::placeholder {
+        font-size: calc(0.9 * var(--font-size));
+    }
+
 }
