@@ -23,7 +23,7 @@
 		position: relative;
 		width: var(--font-size);
 		height: var(--font-size);
-		background: var(--text);
+		background: var(--primary);
 		outline-offset: 2px;
 		&.system {
 			border-radius: 50%;

@@ -30,13 +30,13 @@
 	}
 	const buttonTypeClass = $derived(
 		{
-			primary: 'background: var(--text);color: var(--background);',
+			primary: 'background: var(--primary);color: var(--background);',
 			secondary:
-				'background: var(--subtle-background);color: var(--text); border:0.75px solid var(--ui-empty-background)',
+				'background: var(--secondary);color: var(--primary); border:0.75px solid var(--empty-background)',
 			tertiary:
-				'background: none;color: var(--text); border:0.75px solid var(--ui-empty-background)',
-			danger: 'background: var(--danger-background);color: white;'
-		}[btnType] ?? 'background: var(--text);color: var(--background);'
+				'background: none;color: var(--primary); border:0.75px solid var(--empty-background)',
+			danger: 'background: var(--danger);color: white;'
+		}[btnType] ?? 'background: var(--primary);color: var(--background);'
 	);
 </script>
 

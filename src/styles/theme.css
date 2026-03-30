@@ -2,11 +2,11 @@
     color-scheme: light dark;
     --font-size: 1rem;
     --offset: 1rem;
-    --text: light-dark(#000, #f0f0f0);
     --background: light-dark(white, #000000);
-    --subtle-background: light-dark(whitesmoke, #121212);
-    --ui-empty-background: light-dark(gainsboro, #323232);
-    --danger-background: light-dark(rgb(250, 32, 32), rgb(255, 39, 39));
+    --primary: light-dark(#000, #f0f0f0);
+    --secondary: light-dark(whitesmoke, #121212);
+    --empty-background: light-dark(gainsboro, #323232);
+    --danger: light-dark(rgb(250, 32, 32), rgb(255, 39, 39));
     --padding: 1em;
     --border-radius: 1.5em;
     --transition-delay: 50ms;
@@ -21,7 +21,7 @@
 }
 
 body {
-    color: var(--text);
+    color: var(--primary);
     background: var(--background);
     transition: background 150ms;
 }

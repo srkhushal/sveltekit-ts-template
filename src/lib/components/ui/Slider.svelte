@@ -94,7 +94,7 @@
 		overscroll-behavior: none;
 		width: 100%;
 		height: 0.45rem;
-		background: var(--ui-empty-background);
+		background: var(--empty-background);
 		border-radius: 10dvw;
 		position: relative;
 		cursor: pointer;
@@ -110,7 +110,7 @@
 		width: 0.75rem;
 		height: 1.75rem;
 		transform: translate(-50%, -50%);
-		background: var(--text);
+		background: var(--primary);
 		border-radius: 10dvw;
 		border: 3px solid var(--background);
 		transition: transform var(--transition-delay);
@@ -121,7 +121,7 @@
 		&:active,
 		&:focus {
 			border: 0px solid var(--background);
-			background: var(--text);
+			background: var(--primary);
 			cursor: grabbing;
 			width: 4px;
 		}
@@ -138,7 +138,7 @@
 		left: -1rem;
 		width: 2.25rem;
 		height: 1.5rem;
-		background: var(--text);
+		background: var(--primary);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -156,7 +156,7 @@
 			width: 2.5rem;
 			height: fit-content;
 			padding-block: 0.125rem;
-			background: var(--text);
+			background: var(--primary);
 			color: var(--background);
 			backdrop-filter: blur(10px);
 		}
@@ -173,7 +173,7 @@
 		top: 0;
 		left: 0;
 		height: 100%;
-		background: var(--text);
+		background: var(--primary);
 		border-radius: 10dvw 0 0 10dvw;
 		width: var(--percent);
 

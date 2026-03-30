@@ -28,7 +28,7 @@
 				options={{
 					width: 'calc(var(--font-size) * 0.85)',
 					height: 'calc(var(--font-size) * 0.85)',
-					stroke: 'var(--ui-empty-background)'
+					stroke: 'var(--empty-background)'
 				}}
 			/>
 		</button>
@@ -44,13 +44,13 @@
 		background: none;
 		border-radius: calc(0.85 * var(--border-radius));
 		min-height: 48px;
-		border: 1px solid var(--ui-empty-background);
+		border: 1px solid var(--empty-background);
 		width: 100%;
 		outline: none;
 		padding-inline: var(--padding) calc(2 * var(--padding));
 		&:focus-visible,
 		&:focus {
-			background: var(--subtle-background);
+			background: var(--secondary);
 		}
 		&::placeholder {
 			opacity: 0.5;
@@ -69,7 +69,7 @@
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
-		color: var(--text);
+		color: var(--primary);
 		&:active {
 			opacity: 0.75;
 		}
