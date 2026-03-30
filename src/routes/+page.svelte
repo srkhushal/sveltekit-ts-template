@@ -1,5 +1,5 @@
 <script>
-	import SamplePage from './SamplePage.svelte';
+	import SamplePage from '../lib/SamplePage.svelte';
 </script>
 
 <SamplePage />
