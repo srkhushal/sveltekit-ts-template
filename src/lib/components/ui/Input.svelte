@@ -1,14 +1,24 @@
 <!-- DONT USE THIS. JUST USE THESE STYLES /CLASSES -->
-<script>
+<script lang="ts">
 	import X from '$lib/icons/X.svelte';
 
-	let val = $state('');
+	let value = $state('');
+	let focused = $state(false);
 </script>
 
 <div class="input-wrapper">
-	<input bind:value={val} class="input-element" placeholder="text012" type="text" name="inp" />
-	{#if val.length}
-		<button onclick={() => (val = '')} id="clear">
+	<input
+		bind:value
+		class="input-element"
+		placeholder="text012"
+		type="text"
+		name="inp"
+		onfocus={() => (focused = true)}
+		onblur={() => (focused = false)}
+	/>
+
+	{#if value.length && focused}
+		<button onclick={() => (value = '')} id="clear">
 			<X
 				options={{
 					width: 'calc(var(--font-size) * 0.85)',
