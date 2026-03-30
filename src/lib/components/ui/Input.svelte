@@ -47,7 +47,7 @@
 		border: 1px solid var(--ui-empty-background);
 		width: 100%;
 		outline: none;
-		padding-inline-start: var(--padding);
+		padding-inline: var(--padding) calc(2 * var(--padding));
 		&:focus-visible,
 		&:focus {
 			background: var(--subtle-background);
