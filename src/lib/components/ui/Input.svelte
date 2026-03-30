@@ -11,8 +11,8 @@
 		<button onclick={() => (val = '')} id="clear">
 			<X
 				options={{
-					width: 'var(--font-size)',
-					height: 'var(--font-size)',
+					width: 'calc(var(--font-size) * 0.85)',
+					height: 'calc(var(--font-size) * 0.85)',
 					stroke: 'var(--ui-empty-background)'
 				}}
 			/>
@@ -45,8 +45,8 @@
 		right: var(--padding);
 		transform: translate(0, -50%);
 		border-radius: 50%;
-		width: calc(var(--font-size) * 1.5);
-		height: calc(var(--font-size) * 1.5);
+		width: calc(var(--font-size) * 1.15);
+		height: calc(var(--font-size) * 1.15);
 		display: flex;
 		justify-content: center;
 		align-items: center;
