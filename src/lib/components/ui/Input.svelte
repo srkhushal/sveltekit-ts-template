@@ -37,6 +37,9 @@
 		&:focus {
 			background: var(--subtle-background);
 		}
+		&::placeholder {
+			opacity: 0.5;
+		}
 	}
 	#clear {
 		position: absolute;
