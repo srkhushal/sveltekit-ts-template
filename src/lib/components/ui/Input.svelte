@@ -18,7 +18,12 @@
 	/>
 
 	{#if value.length && focused}
-		<button onclick={() => (value = '')} id="clear">
+		<button
+			onmousedown={() => {
+				value = '';
+			}}
+			id="clear"
+		>
 			<X
 				options={{
 					width: 'calc(var(--font-size) * 0.85)',
