@@ -1,0 +1,50 @@
+:root {
+    color-scheme: light dark;
+    --font-size: 1rem;
+    --offset: 1rem;
+    --background: light-dark(white, #000);
+    --primary: light-dark(#000, #f0f0f0);
+    --faded-primary-blur: light-dark(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+    --faded-secondary-blur: light-dark(rgba(240, 240, 240, 0.75), rgba(14, 14, 14, 1));
+    --secondary: light-dark(whitesmoke, #181818);
+    --empty-background: light-dark(gainsboro, #323232);
+    --danger: light-dark(rgb(250, 32, 32), rgb(255, 39, 39));
+    --padding: 1em;
+    --border-radius: 1.5em;
+    --transition-delay: 50ms;
+
+    --z-index-header: 10;
+
+
+    --blue: light-dark(blue, rgb(100, 177, 255));
+    --green: light-dark(green, greenyellow);
+    --orange: light-dark(orangered, orange);
+    --pink: light-dark(deeppink, pink);
+    --violet: light-dark(rgb(136, 0, 255), rgb(176, 134, 255));
+    --indigo: light-dark(indigo, mediumpurple);
+
+    --cyan: light-dark(darkcyan, cyan);
+    --magenta: light-dark(magenta, magenta);
+
+    --red: light-dark(crimson, lightcoral);
+    --yellow: light-dark(goldenrod, khaki);
+    --gray: light-dark(#333, #ccc);
+}
+
+a {
+    color: var(--random-accent);
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+}
+
+body {
+    color: var(--primary);
+    background: var(--background);
+    transition: background 150ms;
+}
