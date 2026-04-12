@@ -29,6 +29,8 @@
     --red: light-dark(crimson, lightcoral);
     --yellow: light-dark(goldenrod, khaki);
     --gray: light-dark(#333, #ccc);
+    --random-accent: var(--blue);
+
 }
 
 a {
