@@ -6,10 +6,6 @@
 
 	let { initialAccent = ACCENT_OPTIONS[0] } = $props();
 	let selectedAccent = $state(initialAccent);
-
-	$effect(() => {
-		theme.setAccent(selectedAccent);
-	});
 </script>
 
 <header>
@@ -21,7 +17,13 @@
 	<ul>
 		<li><ThemeDot /></li>
 		<li>
-			<select name="accent" id="accent" bind:value={selectedAccent}>
+			<select 
+				onchange={(e) => {
+					const val = e.target.value;
+					console.log(val);
+					theme.setAccent(val);
+				}}
+				name="accent" id="accent" bind:value={selectedAccent}>
 				{#each ACCENT_OPTIONS as accent (accent)}
 					<option value={accent}>{capitalize(accent)}</option>
 				{/each}
